@@ -57,9 +57,7 @@ Source: http://www.apassion4jazz.net/glossary2.html
 
 <h2>Commit</h2>
 <aside class="notes">
-This talk pulls together wisdom from many different Python contributors and users (core developers, contributors, writers, testers, developers, users, outreach instructors). Much of this wisdom is shared
-across the Python community and will be helpful for many
-Python projects.
+Perhaps you covet the "Holy Grail"'s mission, the "Golden Commit". Can you hear the trumpets heralding your success. Oh wait, this is not the commit that this talk is about. Though it may be the end result of "committing yourself to the mission" or maybe not. Not all CPython journeys have a goal of a commit. In fact, my personal journey does not.
 </aside>
 </section>
 <section id="sec-1-2" >
@@ -75,14 +73,14 @@ Python projects.
 
 <h2>Find your rhythm</h2>
 <aside class="notes">
-I am not going to share hidden details about source code on a particular library, but I will share with you resources that will make finding solving that cryptic traceback a whole bunch easier.
+I will share tips on where to look for an issue to work on, how to be more effective as a contributor, and demystify the process enough that you will consider jumping into the upcoming sprints.
 </aside>
 </section>
 <section id="sec-1-4" >
 
 <h2>Improvise</h2>
 <aside class="notes">
-I will share tips on where to look for an issue to work on, how to be more effective as a contributor, and demystify the process enough that you will consider jumping into the upcoming sprints.
+I am not going to share hidden details about source code on a particular library, but I will share with you resources that will make finding solving that cryptic traceback a whole bunch easier. And how to be resourceful and improvise a path.
 </aside>
 </section>
 <section id="sec-1-5" >
@@ -97,7 +95,7 @@ I will share tips on where to look for an issue to work on, how to be more effec
 </ul>
 </h3>
 <aside class="notes">
-Recap
+Ready? Let's dive in together.
 </aside>
 </section>
 </section>
@@ -108,12 +106,6 @@ Recap
 <h2>Commit</h2>
 <aside class="notes">
 TIME: 3.00 to 7.00
-Core Developer Responsiblities
-https://docs.python.org/devguide/coredev.html#responsibilities
-We are all volunteers.
-Be a good person
-Please be prompt in responding to questions.
-Please list what areas you want to be considered an expert in the Experts Index.
 Have fun.
 </aside>
 </section>
@@ -141,6 +133,12 @@ I've had the pleasure of playing with the baddest Jazz cats on the planet.<br \>
 </blockquote>
 <aside class="notes">
 Be a decent bandmate.
+Core Developer Responsiblities
+https://docs.python.org/devguide/coredev.html#responsibilities
+We are all volunteers.
+Be a good person
+Please be prompt in responding to questions.
+Please list what areas you want to be considered an expert in the Experts Index.
 </section>
 </section>
 
@@ -226,8 +224,9 @@ Clambake (n): ad lib session, every man for himself, a jam session not in the gr
 <section id="sec-4-1" >
 
 <h2>Wrong and strong</h2>
-"Along the way, mistakes WILL be made. Not all things tried will work out. But that impulse, the impulse to TRY THINGS, is perhaps the most attractive -- and sometimes the most underutilized - Pat Metheny"
-http://www.apassion4jazz.net/pat-metheny-on-jazz2.html
+<blockquote cite="http://www.apassion4jazz.net/pat-metheny-on-jazz2.html
+">Along the way, mistakes WILL be made. Not all things tried will work out. But that impulse, the impulse to TRY THINGS, is perhaps the most attractive -- and sometimes the most underutilized.<br>- Pat Metheny
+</blockquote>
 <aside class="notes">
 </aside>
 </section>
@@ -244,33 +243,44 @@ Issues
 <section id="sec-4-3" >
 
 <h2>Docs</h2>
-Finding a bitesize doc issue
-Find a doc and add clarity
-Read the docs
-Localization of docs
+<h3>Sphinx, ReStructured Text rst</h3>
+<ul>
+<li>Finding an issue - tracker, IRC, lists</li>
+<li>Read a doc and offer to add clarity</li>
+<li>Localization</li>
+<li>Build the docs<br><pre><code class="bash">
+cd Docs
+make html
+</code></pre></li>
+</ul>
 </section>
 <section id="sec-4-4" >
 
 <h2>Testing</h2>
-Finding a bitesize testing issue
-Run tests on your system (what works, what
-doesn't, why)
-Improve testing fu
-Buildbots - keeping them green What's failing on your system
+<ul>
+<li>Find a testing issue</li>
+<li>Run tests on your system</li>
+<li>Improve testing fu</li>
+<li>Buildbots Green</li>
+</ul>
 </section>
 <section id="sec-4-5" >
 
 <h2>Issues</h2>
-Follow along new issues and python-dev
-irker IRC
-Ask politely for a suggestion
+<ul>
+<li>Follow along new issues and python-dev</li>
+<li>irker IRC</li>
+<li>Ask politely for a suggestion</li>
+</ul>
 </section>
 <section id="sec-4-6" >
 
-<h2>Community</h2>
-Help a new user and find feedback
-Patience and pushing on
-Help another project in the Python universe
+<h2>Developer education and onboarding</h2>
+<ul>
+<li>Help a new user and gather feedback</li>
+<li>Patience and pushing on</li>
+<li>Help another project in the Python universe</li>
+</ul>
 <aside class="notes">
 Features come and go but the community continues on
 </aside>
@@ -278,12 +288,10 @@ Features come and go but the community continues on
 <section id="sec-4-7" >
 
 <h2>The most amazing new feature...</h2>
-PEPs
-Release notes and schedules
-PEP 478 Release schedule for Python 3.5
-Who? Milestones What?
-https://www.python.org/dev/peps/pep-0478/
-Blog posts of core devs (Using a tool like NewsBlur helps)
+<ul>
+<li>PEPs</li>
+<li><a href="https://www.python.org/dev/peps/pep-0478/">PEP 478 Release schedule for Python 3.5</a></li>
+<li>Research python-ideas, issue tracker</li>
 </section>
 </section>
 
@@ -315,10 +323,10 @@ Asked to resubmit: Encores or the next gig
 
 <section>
 <section id="sec-6" >
-<h3>I have won several prizes as the world's slowest alto player as well as a special award in 1961 for quietness.</h3>
+<blockquote>I have won several prizes as the world's slowest alto player as well as a special award in 1961 for quietness.
 <p>
-Paul Desmond
-</p>
+- Paul Desmond
+</p></blockquote>
 <aside class="notes">
 TIME: 26.00 to 29.00
 Jazz greats are slow. Core devs i.e. Brian Curtin a couple of years.
@@ -331,10 +339,13 @@ Jazz greats are slow. Core devs i.e. Brian Curtin a couple of years.
 <li class="fragment roll-in">Try a sprint</li>
 <li class="fragment roll-in">Welcome newcomers</li>
 <li class="fragment roll-in">Share your knowledge</li>
-<li class="fragment roll-in">Embrace some Gypsy Jazz</li>
+<li class="fragment roll-in">Embrace some Gypsy Jazz
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wlFk92t8pXc" frameborder="0" controls allowfullscreen></iframe>
+</li>
 </ul>
 <aside class="notes">
 Django Reinhardt
+song "Horska" performed and recorded by the Halifax, Nova Scotia band Gypsophilia (Horska, Forward Music 2013). video was produced by Halifax production company Shut Up & Colour and was made possible by the support of Nova Scotia Department of Communities, Culture and Heritage.
 </aside>
 </section>
 <section id="sec-6-2" >
@@ -355,6 +366,7 @@ Recap
 <section id="sec-6-3" >
 
 <h2>Enjoy</h2>
+<video src="media/code_swarm.mp4" width="800" height="450" controls></video>
 </section>
 </section>
 
@@ -367,7 +379,8 @@ Recap
 <li>
 <a href="https://github.com/willingc/">Source code &amp; documentation</a>
 </li>
-<li>Questions? Please ask at the poster session or sprints</li>
+<li>Hope to see you at the poster session and sprints</li>
+<li>Contribute to the <a href="http://open.spotify.com/user/12142510943/playlist/5lq2xOoWWebfsBZOqQIwjv">Python Contributor Groove</a> playlist</li>
 </ul>
 </section>
 <section id="sec-7-1">

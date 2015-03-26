@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=ABeeZee:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
 /**
  * cnw's personal theme
  *
@@ -10,7 +12,7 @@
   font-weight: 400;
   src: local("ABeeZee"), local("ABeeZee-Regular"), url(../font/abeezee.woff), url(../font/abeezee.woff) format("woff"); }
 .reveal code, .reveal .src {
-  font-family: Menlo, monospace; }
+  font-family: 'Source Code Pro', monospace; }
 
 .reveal .src {
   font-size: .8em;
