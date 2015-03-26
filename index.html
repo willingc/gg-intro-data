@@ -1,300 +1,429 @@
 <!doctype html>
 <html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Finding your Groove</title>
+<meta name="description" content="Contributing to CPython">
+<meta name="author" content="Carol Willing">
 
-	<head>
-		<meta charset="utf-8">
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/theme/cnw.css" id="theme">
 
-		<title>Finding your Groove</title>
+<!-- Code syntax highlighting -->
+<link rel="stylesheet" href="lib/css/solarized_dark.css">
 
-		<meta name="description" content="Contributing to CPython">
-		<meta name="author" content="Carol Willing">
+<!-- Printing and PDF exports -->
+<script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
+</head>
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<body>
+<div class="reveal">
+<div class="slides">
+<section>
+<h1>Finding your Groove</h1>
+<h2>Contributing to CPython</h2>
+<p>
+<a href="http://willingconsulting.com">Carol Willing</a> &#9834; <a href="http://twitter.com/willingcarol">@willingcarol</a>
+</p>
+<aside class="notes">
+TIME: 0.00 to 3.00
+Welcome to Finding Your groove contributing to cpython
+I'm Carol Willing and I am not a core committer nor do I moonlight as one at "Jazz place in Montreal".
+Yet I am a genuine cool contributor to CPython.
+</section>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+<section>
+<section id="sec-1" >
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+<h2>Groove</h2>
+<blockquote>An infectious feeling of rightness in the rhythm, of being perfectly centered.</blockquote>
+<aside class="notes">
+This talk pulls together wisdom from many different Python contributors and users (core developers, contributors, writers, testers, developers, users, outreach instructors). Much of this wisdom is shared
+across the Python community and will be helpful for many
+Python projects.
+My groove: OpenHatch, PyLadies, San Diego Python, Software Carpentry
+Internal: CPython, data science, math, music
+Net: Outreach and teaching
+Source: http://www.apassion4jazz.net/glossary2.html
+</aside>
+</section>
+<section id="sec-1-1" >
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+<h2>Commit</h2>
+<aside class="notes">
+This talk pulls together wisdom from many different Python contributors and users (core developers, contributors, writers, testers, developers, users, outreach instructors). Much of this wisdom is shared
+across the Python community and will be helpful for many
+Python projects.
+</aside>
+</section>
+<section id="sec-1-2" >
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+<h2>Jump into it</h2>
+<aside class="notes">
+This talk pulls together wisdom from many different Python contributors and users (core developers, contributors, writers, testers, developers, users, outreach instructors). Much of this wisdom is shared
+across the Python community and will be helpful for many
+Python projects.
+</aside>
+</section>
+<section id="sec-1-3" >
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+<h2>Find your rhythm</h2>
+<aside class="notes">
+I am not going to share hidden details about source code on a particular library, but I will share with you resources that will make finding solving that cryptic traceback a whole bunch easier.
+</aside>
+</section>
+<section id="sec-1-4" >
 
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-					<h1>Finding your Groove</h1>
-					<h3>Contributing to CPython</h3>
-					<p>
-						<small><a href="http://willingconsulting.com">Carol Willing</a><br /> <a href="http://twitter.com/willingcarol">@willingcarol</a></small>
-					</p>
-				</section>
+<h2>Improvise</h2>
+<aside class="notes">
+I will share tips on where to look for an issue to work on, how to be more effective as a contributor, and demystify the process enough that you will consider jumping into the upcoming sprints.
+</aside>
+</section>
+<section id="sec-1-5" >
 
-				<section>
-					<h2>Introduction</h2>
-					<h3>Transition</h3>
-					<p>
-						Highlight that this talk pulls together wisdom from many different Python contributors and users (core developers, contributors, writers, testers, developers, users, outreach instructors)
-						Find a band that you like
-					</p>
-				</section>
+<h2>Finding your groove</h2>
+<h3>
+<ul class="org-ul">
+<li class="fragment roll-in">Commit</li>
+<li class="fragment roll-in">Jump into it</li>
+<li class="fragment roll-in">Find your rhythm</li>
+<li class="fragment roll-in">Improvise</li>
+</ul>
+</h3>
+<aside class="notes">
+Recap
+</aside>
+</section>
+</section>
 
-				<section>
-					<h2>Introduction</h2>
-					<h3>A</h3>
-					<p>
-						There are great resources out there but finding them is like finding a needle in 5 haystacks while drinking from a firehose - in a word - overwhelming.
-					</p>
-				</section>
+<section>
+<section id="sec-2" >
 
-				<section>
-					<h2>Introduction</h2>
-					<h3>B</h3>
-					<p>
-					I am not going to share hidden details about source code on a particular library, but I will share with you resources that will make finding solving that cryptic traceback a whole bunch easier.
-					</p>
-				</section>
+<h2>Commit</h2>
+<aside class="notes">
+TIME: 3.00 to 7.00
+Core Developer Responsiblities
+https://docs.python.org/devguide/coredev.html#responsibilities
+We are all volunteers.
+Be a good person
+Please be prompt in responding to questions.
+Please list what areas you want to be considered an expert in the Experts Index.
+Have fun.
+</aside>
+</section>
+<section class="id=sec-2-1" >
 
-				<section>
-					<h2>Introduction</h2>
-					<h3>C</h3>
-					<p>
-					I will share tips on where to look for an issue to work on, how to be more effective as a contributor, and demystify the process enough that you will consider jumping into the upcoming sprints.
-					</p>
-				</section>
+<h2>Commit to your greatness</h2>
+<h3>Don't be afraid</h3>
+<aside class="notes">
+Commit to your greatness don't be afraid.
+Keb Mo
+</section>
+<section class="id=sec-2-2" >
 
-				<section>
-					<h2>Commit</h2>
-					<h3>4 minutes</h3>
-					<ul>
-						<li>Starts with "you"</li>
-						<li>Be a decent band mate</li>
-						<li>Give a try</li>
-					</ul>
-				</section>
+<h2>Commit to yourself</h2>
+<h3>Be true to you</h3>
+<aside class="notes">
+Be you.
+</section>
+<section class="id=sec-2-3" >
 
-				<section>
-					<h2>Jump into it</h2>
-					<h3>Transition</h3>
-					<ul>
-						<li>Fundamentals - Method books</li>
-						<li>The source - Sheet music</li>
-						<li>Tools - get some gear for you</li>
-						<li>Instructor</li>
-						<li>Groups</li>
-					</ul>
-				</section>
+<h2>Commit to others</h2>
+<h3></h3>
+<blockquote cite="http://www.apassion4jazz.net/quotations.html">
+I've had the pleasure of playing with the baddest Jazz cats on the planet.<br \>– George Benson
+</blockquote>
+<aside class="notes">
+Be a decent bandmate.
+</section>
+</section>
 
-				<section>
-					<h2>Fundamentals</h2>
-					<h3>Method books</h3>
-					<ul>
-						<li><a href="https://docs.python.org/devguide/">Python Developer's Guide -> Method book</a></li>
-						<li><a href="https://docs.python.org/devguide/help.html">Help me! Scales -> Catalog of music</a></li>
-						<ul>
-							<li>#python-dev</li>
-							<li>Core Mentorship site and mailing list</li>
-							<li>Mailing lists (python-ideas, python-docs,
-							python-new-bugs-announce)</li>
-						</ul>
-						<li>CPython Developer's Guide: sample pathways for docs, testing or development</li>
-					</ul>
-				</section>
+<section>
+<section id="sec-3" >
 
-				<section>
-					<h2>Go to the source</h2>
-					<h3>Sheet music</h3>
-					<ul>
-						<li><a href="https://docs.python.org/devguide/gitdevs.html#workflow-comparison">Transpose - Mercurial and Git workflow</a></li>
-						<li>B# branches and bookmarks</li>
-						<li><a href="https://hg.python.org/cpython">CPython official repo "browse"</a></li>
-						<li><a href="https://github.com/python/cpython">CPython (read-only GitHub mirror)</a></li>
-					</ul>
-				</section>
+<h2>Jump into it</h2>
+<aside class="notes">
+TIME: 7.00 to 14.00
+</aside>
+</section>
+<section id="sec-3-1" >
 
-				<section>
-					<h2>Get some gear</h2>
-					<h3>Learn to use it</h3>
-					<ul>
-						<li>Editor: Use what helps "you" be productive</li>
-						<li>Command line fu: Get comfortable</li>
-					</ul>
-				</section>
+<h2>Method</h2>
+<h3><a href="https://docs.python.org/devguide/">Python Developer's Guide</a></h3>
+<aside class="notes">
+<ul>
+<li><a href="https://docs.python.org/devguide/help.html">Help!</a></li>
+<li>Sample pathways for docs, testing, and development</li>
+</ul>
+</aside>
+</section>
+<section id="sec-3-2" >
 
-				<section>
-					<h2>Teachers</h2>
-					<h3>Save time and level up</h3>
-					<ul>
-						<li>User groups</li>
-						<li>Training (OpenHatch, SW Carpentry)</li>
-						<li>Sprints, friends, and pairing</li>
-						<li>Regional conferences</li>
-						<li>Seek out an instructor</li>
-					</ul>
-				</section>
+<h2>Gather your gear</h2>
+<ul>
+<li>Editor - personal and productive</li>
+<li>Command line - bash, zsh, dotfiles</li>
+<li>Version control - Mercurial, git</li>
+<li>Operating system - Linux, Mac OSX, Windows</li>
+</ul>
+</section>
+<section id="sec-3-3" >
 
-				<section>
-					<h2>Jump into it</h2>
-					<h3>End of 7 minutes</h3>
-					<p>
-					Groups...different bands, styles, fun
-					pyvideo.org for tutorial and conference goodness
-					Try some sight reading
-					issue tracker duo
-					Be an avid listener
-					</p>
-				</section>
+<h2>Check out sheet music</h2>
+<ul>
+<li>
+<a href="https://hg.python.org/cpython">
+CPython <small>official repo</small>
+</a><br \><pre><code class="bash">hg clone https://hg.python.org/cpython</code></pre></li>
+<li>
+<a href="https://github.com/python/cpython">
+CPython <small>semi official, read-only GitHub mirror</small>
+</a><br \><pre><code class="bash">git clone https://github.com/python/cpython</code></pre></li>
+<li>
+<a href="https://docs.python.org/devguide/gitdevs.html#workflow-comparison">
+Transpose Mercurial and Git
+</a></li>
+</ul>
+<aside class="notes">
+Browse
+Key of B: Branches and bookmarks
+</aside>
+</section>
+<section id="sec-3-4" >
 
-				<section>
-					<h2>Selecting a few issues</h2>
-					<h3>(7 minutes)</h3>
-					<p>
-					Where do the options pop up from?
-					Trial and error Serendipity Circling back Interests
-					First choices
-					Docs
-					Fix a broken test
-					Compose an atomic fix or refactor
-					Finding a bitesize doc issue
-					Follow along new issues and python-dev Find a doc and add clarity
-					Read the docs
-					Help a new user and find feedback
-					Finding a bitesize testing issue
-					Run tests on your system (what works, what
-					doesn't, why)
-					Improve testing fu
-					Buildbots - keeping them green What's failing on your system
-					Patience and pushing on
-					Help another project in the Python universe Monitor the interwebs of Python
-					Ask politely for a suggestion
-					Release notes and schedules
-					Blog posts of core devs (Using a tool like NewsBlur helps)
-					</p>
-				</section>
+<h2>Listen</h2>
+<h3>pyvideo.org</h3>
+<blockquote>My first relationship to any kind of musical situation is as a listener.<br \>- Pat Metheny</blockquote>
+</section>
+<section id="sec-3-5" >
 
-				<section>
-					<h2>Improvise</h2>
-					<h3>(5 minutes)</h3>
-					<p>
-					Perfection is not the goal.
-					Each performance differs. Mistakes happen.
-					Life happens.
-					Unplanned paths.
-					Pluck a string/poke at the code
-					What does this do?
-					What if I do this?
-					What happens if I combine this and that? Franken- instrument
-					Refocus and regroup
-					create patch
-					upload to issue tracker request review
-					Start practicing and playing
-					Change Build Test Repeat
-					Reviews and encores
-					The Good, the bad, and the ugly
-					Asked to resubmit: Encores or the next gig
-					</p>
-				</section>
+<h2>Joining a band</h2>
+<ul>
+<li><a href="http://pythonmentors.com">Core Mentorship site</a></li>
+<li>#python-dev on IRC</li>
+<li>python-ideas, python-docs, python-new-bugs-announce lists</li>
+<li>OpenHatch, PyLadies, user groups - welcoming spaces</li>
+<li>Sprints and pairing</li>
+</ul>
+</section>
+</section>
 
-				<section>
-					<h2>Conclusions</h2>
-					<h3>(3 minutes)</h3>
-					<p>
-					Celebrate
-					Listen!
-					Pitch in!
-					Let it be!
-					Jam with others!
-					Find "your" Python groove
-					Try a sprint
-					Work with those that know different things. Help share your knowledge if asked by a newcomer.
-					Cool.
-					</p>
-				</section>
+<section>
+<section id="sec-4" >
 
-				<section style="text-align: left;">
-					<h1>THANK YOU</h1>
-					<p>
-						- <a href="http://slides.com">Slides</a> <br>
-						- <a href="https://github.com/willingc/">Source code &amp; documentation</a> <br>
-						- San Diego Python, PyLadies San Diego, and Paul Collins for their <3 of Python
-					</p>
-				</section>
+<h2>Find your rhythm</h2>
+<aside class="notes">
+TIME: 14.00 to 21.00
+Clambake (n): ad lib session, every man for himself, a jam session not in the groove.
+</aside>
+</section>
+<section id="sec-4-1" >
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
+<h2>Wrong and strong</h2>
+"Along the way, mistakes WILL be made. Not all things tried will work out. But that impulse, the impulse to TRY THINGS, is perhaps the most attractive -- and sometimes the most underutilized - Pat Metheny"
+http://www.apassion4jazz.net/pat-metheny-on-jazz2.html
+<aside class="notes">
+</aside>
+</section>
+<section id="sec-4-2" >
 
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
+<h2>Selecting a solo</h2>
+<aside class="notes">
+Getting started
+Docs
+Tests
+Issues
+</aside>
+</section>
+<section id="sec-4-3" >
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
+<h2>Docs</h2>
+Finding a bitesize doc issue
+Find a doc and add clarity
+Read the docs
+Localization of docs
+</section>
+<section id="sec-4-4" >
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
+<h2>Testing</h2>
+Finding a bitesize testing issue
+Run tests on your system (what works, what
+doesn't, why)
+Improve testing fu
+Buildbots - keeping them green What's failing on your system
+</section>
+<section id="sec-4-5" >
 
-			<!--End of slides-->
-			</div>
+<h2>Issues</h2>
+Follow along new issues and python-dev
+irker IRC
+Ask politely for a suggestion
+</section>
+<section id="sec-4-6" >
 
-		<!--End of reveal-->
-		</div>
+<h2>Community</h2>
+Help a new user and find feedback
+Patience and pushing on
+Help another project in the Python universe
+<aside class="notes">
+Features come and go but the community continues on
+</aside>
+</section>
+<section id="sec-4-7" >
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+<h2>The most amazing new feature...</h2>
+PEPs
+Release notes and schedules
+PEP 478 Release schedule for Python 3.5
+Who? Milestones What?
+https://www.python.org/dev/peps/pep-0478/
+Blog posts of core devs (Using a tool like NewsBlur helps)
+</section>
+</section>
 
-		<script>
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+<section>
+<section id="sec-5">
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+<h2>Improvise</h2>
+<aside class="notes">
+TIME: 21.00 to 26.00
+Perfection is not the goal.
+Each performance differs. Mistakes happen.
+Life happens.
+Unplanned paths.
+Pluck a string/poke at the code
+What does this do?
+What if I do this?
+What happens if I combine this and that? Franken- instrument
+Refocus and regroup
+create patch
+upload to issue tracker request review
+Start practicing and playing
+Change Build Test Repeat
+Reviews and encores
+The Good, the bad, and the ugly
+Asked to resubmit: Encores or the next gig
+</aside>
+</section>
+</section>
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-		</script>
+<section>
+<section id="sec-6" >
+<h3>I have won several prizes as the world's slowest alto player as well as a special award in 1961 for quietness.</h3>
+<p>
+Paul Desmond
+</p>
+<aside class="notes">
+TIME: 26.00 to 29.00
+Jazz greats are slow. Core devs i.e. Brian Curtin a couple of years.
+</aside>
+</section>
+<section id="sec-6-1" >
 
-	</body>
+<h2>Find your Python groove?</h2>
+<ul class="org-ul">
+<li class="fragment roll-in">Try a sprint</li>
+<li class="fragment roll-in">Welcome newcomers</li>
+<li class="fragment roll-in">Share your knowledge</li>
+<li class="fragment roll-in">Embrace some Gypsy Jazz</li>
+</ul>
+<aside class="notes">
+Django Reinhardt
+</aside>
+</section>
+<section id="sec-6-2" >
+
+<h2>Get into the groove</h2>
+<ul class="org-ul">
+<li class="fragment roll-in">Commit</li>
+<li class="fragment roll-in">Jump into it</li>
+<li class="fragment roll-in">Find your rhythm</li>
+<li class="fragment roll-in">Improvise</li>
+</ul>
+</h3>
+<aside class="notes">
+Madonna - whoa
+Recap
+</aside>
+</section>
+<section id="sec-6-3" >
+
+<h2>Enjoy</h2>
+</section>
+</section>
+
+<section>
+<section id="sec-7">
+
+<h1>THANK YOU</h1>
+<ul>
+<li><a href="http://slides.com">Slides</a></li>
+<li>
+<a href="https://github.com/willingc/">Source code &amp; documentation</a>
+</li>
+<li>Questions? Please ask at the poster session or sprints</li>
+</ul>
+</section>
+<section id="sec-7-1">
+
+<h2>Gratitude</h2>
+<ul>
+<li>San Diego Python, PyLadies San Diego, and virtual PyCon 2015 cool cat, Paul Collins</li>
+<li>CPython contributors</li>
+<li>OpenHatch friends</li>
+<li>Pythonistas: past and present, near and far</li>
+</ul>
+</section>
+<section id="sec-7-2">
+
+<h2>Credits</h2>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</section>
+</section>
+
+<!--End of slides-->
+</div>
+
+<!--End of reveal-->
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+	// Full list of configuration options available at:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+		slideNumber: true,
+
+		transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+		// Optional reveal.js plugins
+		dependencies: [
+			{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+			{ src: 'plugin/zoom-js/zoom.js', async: true },
+			{ src: 'plugin/notes/notes.js', async: true }
+		]
+	});
+</script>
+
+</body>
 </html>
