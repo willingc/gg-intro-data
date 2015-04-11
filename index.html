@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="css/theme/cnw.css" id="theme">
 
 <!-- Code syntax highlighting -->
-<link rel="stylesheet" href="lib/css/solarized_dark.css">
+<link rel="stylesheet" href="lib/css/solarized_light.css">
 
 <!-- Printing and PDF exports -->
 <script>
@@ -40,8 +40,8 @@ I'm Carol Willing and I'm not a CPython core committer nor do I moonlight as one
 
 <section>
 <section id="sec-1" data-background="media/SandraNkake.jpg">
-<h2>Groove</h2>
-<blockquote>An infectious feeling of<br \>rightness in the rhythm,<br \> of being perfectly centered.</blockquote>
+<h2 style="color:red">Groove</h2>
+<blockquote style="background-color:whitesmoke">An <span style="color:red">infectious feeling</span> of<br>rightness in the <span style="color:red">rhythm</span>,<br> of being <span style="color:red">perfectly centered</span>.</blockquote>
 <aside class="notes">
 Groove. One of the cornerstones of Jazz music. My groove in music: amateur guitarist in a Guitar Orchestra (last section, last chair). I love it.
 My Python groove: OpenHatch, PyLadies, San Diego Python, Software Carpentry
@@ -79,9 +79,9 @@ I am not going to share hidden details about source code on a particular library
 </section>
 <section id="sec-1-5" data-background="media/jakegroove.jpg">
 
-<h2>Finding your groove</h2>
+<h2 style="color:orangered">Finding your groove</h2>
 <h3>
-<ul class="org-ul">
+<ul class="org-ul" style="color:orangered" >
 <li class="fragment roll-in">Commit</li>
 <li class="fragment roll-in">Jump into it</li>
 <li class="fragment roll-in">Find your rhythm</li>
@@ -107,8 +107,7 @@ You.
 <section class="id=sec-2-1" >
 
 <h2>Step into your greatness.</h2>
-<h3>Don't be afraid.</h3>
-<h3>...</h3>
+<h3>Don't be afraid...</h3>
 <h3>No one else could do what you do.</h3>
 <p>— Keb Mo'</p>
 <aside class="notes">
@@ -116,12 +115,11 @@ Commit to your greatness
 Imposter syndrome
 Something to offer
 </section>
-<section class="id=sec-2-2" >
+<section class="id=sec-2-2" data-background="media/latinjazz.jpg">
 
-<h2>Commit to others</h2>
-<h3></h3>
-<blockquote cite="http://www.apassion4jazz.net/quotations.html">
-I've had the pleasure<br \>of playing with the<br \>baddest Jazz cats on the planet.<br \>— George Benson
+<h2 style="color:orangered">Commit to others</h2>
+<blockquote style="background-color:whitesmoke" cite="http://www.apassion4jazz.net/quotations.html">
+I've had the pleasure<br>of playing with the<br>baddest Jazz cats on the planet.<br>— George Benson
 </blockquote>
 <aside class="notes">
 Be a decent bandmate.
@@ -153,8 +151,8 @@ TIME: 7.00 to 14.00
 </section>
 <section id="sec-3-1" data-background="media/devguide.png" >
 
-<h2>Method</h2>
-<h3><a href="https://docs.python.org/devguide/">Python Developer's Guide</a></h3>
+<h2 style="background-color:gainsboro">Method</h2>
+<h3 style="background-color:gainsboro"><a href="https://docs.python.org/devguide/">Python Developer's Guide</a></h3>
 <aside class="notes">
 Help!
 Sample pathways for docs, testing, and development
@@ -167,9 +165,9 @@ Some sample topics
 <h2>Gather your gear</h2>
 <ul>
 <li>Editor - your choice</li>
+<li>Operating system - Linux, OS X, Windows</li>
 <li>Command line - basics</li>
-<li>Operating system - Linux, Mac OSX, Windows</li>
-<li>Version control - basics of Mercurial and git</li>
+<li>Version control - basics of Mercurial (hg) and git</li>
 </ul>
 </section>
 <section id="sec-3-3" >
@@ -179,11 +177,11 @@ Some sample topics
 <li>
 <a href="https://hg.python.org/cpython">
 CPython <small>official repo</small>
-</a><br \><pre><code class="bash">hg clone https://hg.python.org/cpython</code></pre></li>
+</a><br><code class="bash">hg clone https://hg.python.org/cpython</code></li>
 <li>
 <a href="https://github.com/python/cpython">
 CPython <small>semi official, read-only GitHub mirror</small>
-</a><br \><pre><code class="bash">git clone https://github.com/python/cpython</code></pre></li>
+</a><br><code class="bash">git clone https://github.com/python/cpython</code></pre></li>
 <li>
 <a href="https://docs.python.org/devguide/gitdevs.html#workflow-comparison">
 Transpose Mercurial and Git
@@ -197,8 +195,8 @@ Key of B: Branches and bookmarks
 <section id="sec-3-4" >
 
 <h2>A little theory...</h2>
+<h3>source code directory</h3>
 <ul>
-<li>Structure of source code directories</li>
 <li>Docs</li>
 <li>Tests</li>
 <li>Operating system</li>
@@ -211,7 +209,7 @@ Key of B: Branches and bookmarks
 <section id="sec-3-5" >
 
 <h2>Listen</h2>
-<blockquote>My first relationship to any kind of musical situation is as a listener.<br \>— Pat Metheny</blockquote>
+<blockquote>My first relationship to any kind of musical situation is as a listener.<br>— Pat Metheny</blockquote>
 </section>
 <section id="sec-3-6" >
 
@@ -226,10 +224,13 @@ Key of B: Branches and bookmarks
 <section id="sec-3-8" >
 
 <h2>...or several combos</h2>
-<li>IRC #python-dev</li>
-<li>Mailing lists python-ideas, python-docs, python-new-bugs-announce</li>
-<li>Welcoming spaces OpenHatch, PyLadies, user groups</li>
+<li>#python-dev</li>
+<li>Mailing lists</li>
+<p>python-ideas, python-docs, python-new-bugs-announce</p>
+<li>Welcoming spaces</li>
+<p>OpenHatch, PyLadies, user groups</p>
 <li>Sprints and pairing</li>
+<li>#positive-python</li>
 </ul>
 </section>
 </section>
@@ -240,7 +241,6 @@ Key of B: Branches and bookmarks
 <h2>Find your rhythm</h2>
 <aside class="notes">
 TIME: 14.00 to 21.00
-Award teenager phase
 Trying to find your way
 Clambake (n): ad lib session, every man for himself, a jam session not in the groove.
 </aside>
@@ -248,6 +248,7 @@ Clambake (n): ad lib session, every man for himself, a jam session not in the gr
 <section id="sec-4-1" >
 
 <h2>Wrong and strong</h2>
+<h3>Loud and proud</h3>
 <blockquote cite="http://www.apassion4jazz.net/pat-metheny-on-jazz2.html
 ">Along the way, mistakes WILL be made. Not all things tried will work out. But that impulse, the impulse to TRY THINGS, is perhaps the most attractive -- and sometimes the most underutilized.<br>— Pat Metheny
 </blockquote>
@@ -268,25 +269,26 @@ Issues
 <section id="sec-4-3" >
 
 <h2>Docs</h2>
-<h3>Sphinx, reStructured Text rst</h3>
 <ul>
-<li>Finding an issue - tracker, IRC, lists</li>
-<li>Read a doc and offer to add clarity</li>
-<li>Localization</li>
-<li>Build the docs<br><pre><code class="bash">
-cd Docs
-make html
-</code></pre></li>
+<li>Sphinx</li>
+<code>
+$cd Docs<br>
+$make html
+</code>
+<li>reStructured Text (rst) basics</li>
+<li>Find an issue</li>
+<li>Read a doc; offer a helpful change</li>
+<li>Localize a doc</li>
 </ul>
 </section>
 <section id="sec-4-4" >
 
 <h2>Testing</h2>
 <ul>
-<li>Find a testing issue</li>
 <li>Run tests on your system</li>
+<li>Find a testing issue</li>
 <li>Improve testing fu</li>
-<li>Buildbots Green</li>
+<li>Keep Buildbots green</li>
 </ul>
 </section>
 <section id="sec-4-5" >
@@ -294,17 +296,19 @@ make html
 <h2>Issues</h2>
 <ul>
 <li>Follow along new issues and python-dev</li>
-<li>irker IRC</li>
-<li>Ask politely for a suggestion</li>
+<li>Look at infrastructure projects</li>
+<li>Ask on core mentorship</li>
+<li>Consider reviewing a patch</li>
 </ul>
 </section>
 <section id="sec-4-6" >
 
-<h2>Developer education and onboarding</h2>
+<h2>Onboarding and beyond</h2>
 <ul>
-<li>Help a new user and gather feedback</li>
-<li>Patience and pushing on</li>
-<li>Help another project in the Python universe</li>
+<li>Inspire</li>
+<li>Equip</li>
+<li>Listen</li>
+<li>Encourage</li>
 </ul>
 <aside class="notes">
 Features come and go but the community continues on
@@ -314,9 +318,10 @@ Features come and go but the community continues on
 
 <h2>The most amazing new feature...</h2>
 <ul>
-<li>PEPs</li>
 <li><a href="https://www.python.org/dev/peps/pep-0478/">PEP 478 Release schedule for Python 3.5</a></li>
-<li>Research python-ideas, issue tracker</li>
+<li>Research issue tracker, mail archives, PEPs</li>
+<li>Review other people's patches</li>
+<li>Be cordial</li>
 </section>
 </section>
 
@@ -344,11 +349,23 @@ The Good, the bad, and the ugly
 Asked to resubmit: Encores or the next gig
 </aside>
 </section>
+<section id="sec-5-1" >
+
+<h3>people</h3>
+</section>
+<section id="sec-5-2" >
+
+<h2>people</h2>
+</section>
+<section id="sec-5-3" >
+
+<h1>people</h1>
+</section>
 </section>
 
 <section>
-<section id="sec-6" >
-<blockquote>I have won several prizes as the world's slowest alto player as well as a special award in 1961 for quietness.
+<section id="sec-6" data-background="media/seastar.jpg">
+<blockquote style="background-color:aliceblue">I have won several prizes as the <span style="color:coral">world's slowest</span> alto player as well as a special award in 1961 for quietness.
 <p>
 — Paul Desmond
 </p></blockquote>
@@ -362,11 +379,10 @@ Jazz greats are slow. Core devs i.e. Brian Curtin a couple of years.
 <h2>Find your Python groove?</h2>
 <ul class="org-ul">
 <li class="fragment roll-in">Try a sprint</li>
-<li class="fragment roll-in">Welcome newcomers</li>
-<li class="fragment roll-in">Share your knowledge</li>
-<li class="fragment roll-in">Embrace some Gypsy Jazz
+<li class="fragment roll-in">Learn, build, and share</li>
+<li class="fragment roll-in">Embrace some Gypsy Jazz<br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wlFk92t8pXc" frameborder="0" controls allowfullscreen></iframe>
-</li>
+<br><span style="color:blue">Thank you Django lover, Adrian Holovaty, for PyCon 2014 Poster Session encouragement</span></li>
 </ul>
 <aside class="notes">
 Django Reinhardt
@@ -375,28 +391,42 @@ song "Horska" performed and recorded by the Halifax, Nova Scotia band Gypsophili
 </section>
 <section id="sec-6-2" >
 
-<h2>Get into the groove</h2>
-<ul class="org-ul">
-<li class="fragment roll-in">Commit</li>
-<li class="fragment roll-in">Jump into it</li>
-<li class="fragment roll-in">Find your rhythm</li>
-<li class="fragment roll-in">Improvise</li>
-</ul>
-</h3>
-<aside class="notes">
-Madonna - whoa
-Recap
-</aside>
+<h2>PyLadies'</h2>
+<h2>playing it forward</h2>
+
+<h3>The Jazzy Groove Guide to CPython Contribution</h3>
 </section>
 <section id="sec-6-3" >
 
-<h2>Enjoy</h2>
-<video src="media/code_swarm.mp4" width="800" height="450" controls></video>
+<h2>The Jazzy Groove Guide to CPython Contribution</h2>
+<img src="media/jazzy.png">
+</section>
+<section id="sec-6-4" >
+
+<h2>PyLadies' playing it forward</h2>
+<li>Sunday's poster session</li>
+<li>Sprint</li>
+<li>Contribute to the <a href="http://open.spotify.com/user/12142510943/playlist/5lq2xOoWWebfsBZOqQIwjv">Python Contributor Groove</a> playlist</li>
+</ul>
+</h3>
+<aside class="notes">
+</aside>
 </section>
 </section>
 
-<section>
 <section id="sec-7">
+
+<h2>Gratitude</h2>
+<ul>
+<li>San Diego Python, PyLadies San Diego, and PyCon 2015 virtual cool cat, Paul Collins</li>
+<li>CPython contributors and core devs</li>
+<li>OpenHatch friends</li>
+<li>Requests friends</li>
+<li>PyLadies</li>
+<li>Pythonistas: past and present, near and far</li>
+</ul>
+</section>
+<section id="sec-7-1">
 
 <h1>THANK YOU</h1>
 <ul>
@@ -404,31 +434,22 @@ Recap
 <li>
 <a href="https://github.com/willingc/">Source code &amp; documentation</a>
 </li>
-<li>The Jazzy Groove Guide to CPython Contribution</li>
-<li>Hope to see you at Sunday's poster session and sprint workshop</li>
-<li>Add your favorites. Contribute to the <a href="http://open.spotify.com/user/12142510943/playlist/5lq2xOoWWebfsBZOqQIwjv">Python Contributor Groove</a> playlist</li>
-</ul>
+<li>Enjoy the journey</li>
+<video src="media/code_swarm.mp4" width="800" height="450" controls></video>
 </section>
 <section id="sec-7-1">
 
-<h2>Gratitude</h2>
-<ul>
-<li>San Diego Python, PyLadies San Diego, and PyCon 2015 virtual cool cat, Paul Collins</li>
-<li>CPython contributors and core devs</li>
-<li>OpenHatch friends</li>
-<li>PyLadies</li>
-<li>Pythonistas: past and present, near and far</li>
-</ul>
-</section>
-<section id="sec-7-2">
-
 <h2>Credits</h2>
 <ul>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-</ul>
+<li>Youtube - song "Horska" performed and recorded by the Halifax, Nova Scotia band Gypsophilia (Horska, Forward Music 2013). video was produced by Halifax production company Shut Up &amp; Colour and was made possible by the support of Nova Scotia Department of Communities, Culture and Heritage.
+</li>
+<li>
+Photos: Fabrizio Sciami, For a democratic [Jazz It] Festival; Carol Willing
+<li>
+Quotes: http://www.apassion4jazz.net
+</li>
+<li</li>
+<video src="media/code_swarm.mp4" width="800" height="450" controls></video>
 </section>
 </section>
 
