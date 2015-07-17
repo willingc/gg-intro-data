@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Finding your Groove</title>
-<meta name="description" content="Contributing to CPython">
+<title>Dive into Data</title>
+<meta name="description" content="Analysis and Visualization with Python">
 <meta name="author" content="Carol Willing">
 
 <link rel="stylesheet" href="css/reveal.css">
@@ -13,446 +13,193 @@
 <link rel="stylesheet" href="lib/css/solarized_light.css">
 
 <!-- Printing and PDF exports -->
-<script>
-    var link = document.createElement( 'link' );
-    link.rel = 'stylesheet';
-    link.type = 'text/css';
-    link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-    document.getElementsByTagName( 'head' )[0].appendChild( link );
-</script>
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
 </head>
 
 <body>
 <div class="reveal">
 <div class="slides">
 <section>
-<h1>Finding your Groove</h1>
-<h2>Contributing to CPython</h2>
+<h1>Dive into Data</h1>
+<h2>Analysis and Visualization with Python</h2>
+<p>
+<p>
+<h4>Geek Girl Tech Con San Diego</h4>
+<h4>June 20, 2015</h4>
 <p>
 <a href="http://willingconsulting.com">Carol Willing</a></p>
 <p><a href="http://twitter.com/willingcarol">@willingcarol</a>
 </p>
-<aside class="notes">
-TIME: 0.00 to 3.00
-Welcome to Finding Your Groove Contributing to Cpython.
-I'm Carol Willing and I'm not a CPython core committer nor do I moonlight as one at the Montreal Python User Group meetings. Yet, I am a genuine contributor to CPython.
 </section>
 
 <section>
-<section id="sec-1" data-background="media/SandraNkake.jpg">
-<h2 style="color:red">Groove</h2>
-<blockquote style="background-color:whitesmoke">An <span style="color:red">infectious feeling</span> of<br>rightness in the <span style="color:red">rhythm</span>,<br> of being <span style="color:red">perfectly centered</span>.</blockquote>
-<aside class="notes">
-Groove. One of the cornerstones of Jazz music. My groove in music: amateur guitarist in a Guitar Orchestra (last section, last chair). I love it.
-My Python groove: OpenHatch, PyLadies, San Diego Python, Software Carpentry
-Internal: CPython, data science, math, music. I love the puzzle of writing code and problem solving; but I love sharing it through outreach and inspiring others.
-Source: http://www.apassion4jazz.net/glossary2.html
-</aside>
+<h3>Director</h3>
+<img src="media/psf.png" width="400px">
+<h3><br>Geek in Residence</h3>
+<img src="media/NEW-FAB-LAB.png" width="300px">
+<h3><br>Organizer</h3>
+<img src="media/pyladies_logo.png" width="120px"><img src="media/sd_python.jpeg">
 </section>
-<section id="sec-1-1" >
-
-<h2>Commit</h2>
-<aside class="notes">
-Perhaps you daydream about the celebration as your "CPython Golden Commit" is merged. You can hear the trumpets and the jazz vocalist singing the source code of your succesful "golden commit". Oh wait, that's not the type of commit that this talk is about. While a "Golden Commit" may be the end result of your personal commitment, not all CPython journeys have a goal of a commit. In fact, my personal journey does not.
-</aside>
+<section>
+<section id="sec-2" data-background="media/datapost.jpg">
+<h2 style="background-color:aliceblue">Buckets of Data</h2>
 </section>
-<section id="sec-1-2" >
+<section id="sec-2-1" >
 
-<h2>Jump into it</h2>
-<aside class="notes">
-My personal journey and commitment to the Python community is to do my best to onboard developers and help them reach their goals through outreach and education. This talk pulls together wisdom from many different Python contributors and users (core developers, contributors, writers, testers, developers, users, outreach instructors).
-</aside>
+<h2>Data cleaning</h2>
 </section>
-<section id="sec-1-3" >
+<section id="sec-2-2" >
 
-<h2>Find your rhythm</h2>
-<aside class="notes">
-I will share tips with you on how you may contribute to CPython, what it means, where to look for something to work on, how to be more effective as a contributor, and demystify the process enough that you will consider jumping into the upcoming sprints.
-</aside>
+<h2>Explore and analyze</h2>
 </section>
-<section id="sec-1-4" >
+<section id="sec-2-3" >
 
-<h2>Improvise</h2>
-<aside class="notes">
-I am not going to share hidden details about source code on a particular library, but I will share with you resources that will inspire, encourage and help you be resourceful and improvise your Python path.
-</aside>
+<h2>Information and visualization</h2>
 </section>
-<section id="sec-1-5" data-background="media/jakegroove.jpg">
+<section id="sec-2-4" >
 
-<h2 style="color:orangered">Finding your groove</h2>
+<h2>Share</h2>
+</section>
+<section id="sec-2-5" data-background="media/plotly.png">
+</section>
+
+<section id="sec-2-6">
+<h2 style="color:Navy">How?</h2>
 <h3>
-<ul class="org-ul" style="color:orangered" >
-<li class="fragment roll-in">Commit</li>
-<li class="fragment roll-in">Jump into it</li>
-<li class="fragment roll-in">Find your rhythm</li>
-<li class="fragment roll-in">Improvise</li>
+<ul class="org-ul" >
+<li class="fragment roll-in">Use examples</li>
+<li class="fragment roll-in">Interact</li>
+<li class="fragment roll-in">Test options</li>
+<li class="fragment roll-in">Be creative</li>
 </ul>
 </h3>
-<aside class="notes">
-So let's recap the success factors to find your groove. Ready? Let's dive into each one together.
-</aside>
+</section>
+</section>
+
+
+<section>
+<section id="sec-3" data-background="media/datapost.jpg">
+<h2 style="background-color:aliceblue">Data and the SciPy Stack</h2>
+</section>
+<section>
+
+<img src="media/numpy_logo.png" width="720px">
+<h3><a href="http://www.numpy.org">http://www.numpy.org</a></h3>
+</section>
+<section class="id=sec-3-1">
+
+<h2>SciPy</h2>
+<img src="media/scipy_med.png" width="200px">
+<h3><a href="http://www.scipy.org">http://www.scipy.org</a></h3>
+</section>
+<section class="id=sec-3-2">
+
+<h2>Pandas</h2>
+<img src="media/pandas_badge2.jpg" width="120px">
+<h3><a href="http://pandas.pydata.org">http://pandas.pydata.org</a></h3>
+</section>
+<section class="id=sec-3-3">
+
+<h2>Matplotlib</h2>
+<img src="media/matplotlib_med.png" width="200px">
+<h3><a href="http://matplotlib.org">http://matplotlib.org</a></h3>
+</section>
+<section class="id=sec-3-4">
+
+<h2>Many more libraries...</h2>
+<img src="media/pandas_badge2.jpg" width="120px">
+<h3>Scikit Learn</h3>
+<h3>Scikit Image</h3>
+<h3>PyMC</h3>
+<h3>nltk</h3>
+<h3>seaborn</h3>
+<h3>bokeh</h3>
+</section>
+<section class="id=sec-3-5" data-background="media/plotly.png" >
+
+<h2>...and services</h2>
+</section>
+</section>
+
+
+<section>
+<section id="sec-4" data-background="media/datapost.jpg">
+<h2 style="background-color:aliceblue">Jupyter</h2>
+</section>
+<section>
+
+<h2>Jupyter</h2>
+<h3><a href="http://jupyter.org">http://jupyter.org</a></h3>
+</section>
+<section id="sec-4-1" data-background="media/ProjectJupyterShots/jupyter_home.png" >
+</section>
+<section id="sec-4-2" data-background="media/ProjectJupyterShots/polyglot.png" >
+
+<h2> <br> <br> Polyglot</h2>
+</section>
+<section id="sec-4-3" data-background="media/ProjectJupyterShots/tryjupyter.png" >
+<h2>Notebooks</h2>
+</section>
+<section id="sec-4-4" data-background="media/ProjectJupyterShots/sample_one.png" >
+
+</section>
+<section id="sec-4-5" data-background="media/ProjectJupyterShots/sample_two.png" >
 </section>
 </section>
 
 <section>
-<section id="sec-2" >
-
-<h2>Commit</h2>
-<img src="media/card.png" width="720px">
-<aside class="notes">
-TIME: 3.00 to 7.00
-You.
-</aside>
-</section>
-<section class="id=sec-2-1" >
-
-<h2>Step into your greatness.</h2>
-<h3>Don't be afraid...</h3>
-<h3>No one else could do what you do.</h3>
-<p>— Keb Mo'</p>
-<aside class="notes">
-Commit to your greatness
-Imposter syndrome
-Something to offer
-</section>
-<section class="id=sec-2-2" data-background="media/latinjazz.jpg">
-
-<h2 style="color:orangered">Commit to others</h2>
-<blockquote style="background-color:whitesmoke" cite="http://www.apassion4jazz.net/quotations.html">
-I've had the pleasure<br>of playing with the<br>baddest Jazz cats on the planet.<br>— George Benson
-</blockquote>
-<aside class="notes">
-Be a decent bandmate.
-Core Developer Responsiblities
-https://docs.python.org/devguide/coredev.html#responsibilities
-We are all volunteers.
-Be a good person
-Please be prompt in responding to questions.
-Please list what areas you want to be considered an expert in the Experts Index.
-</aside>
-</section>
-<section class="id=sec-2-3" >
-
-<h2>Commit to yourself</h2>
-<aside class="notes">
-Be true to you. Be you.
-Little things.
-</aside>
+<section id="sec-5" data-background="media/fablabcode.jpg">
+<h2 style="background-color:aliceblue">Examples</h2>
 </section>
 </section>
 
 <section>
-<section id="sec-3" >
-
-<h2>Jump into it</h2>
-<aside class="notes">
-TIME: 7.00 to 14.00
-</aside>
-</section>
-<section id="sec-3-1" data-background="media/devguide.png" >
-
-<h2 style="background-color:gainsboro">Method</h2>
-<h3 style="background-color:gainsboro"><a href="https://docs.python.org/devguide/">Python Developer's Guide</a></h3>
-<aside class="notes">
-Help!
-Sample pathways for docs, testing, and development
-Some sample topics
-</ul>
-</aside>
-</section>
-<section id="sec-3-2" >
-
-<h2>Gather your gear</h2>
-<ul>
-<li>Editor - your choice</li>
-<li>Operating system - Linux, OS X, Windows</li>
-<li>Command line - basics</li>
-<li>Version control - basics of Mercurial (hg) and git</li>
-</ul>
-</section>
-<section id="sec-3-3" >
-
-<h2>Check out sheet music</h2>
-<ul>
-<li>
-<a href="https://hg.python.org/cpython">
-CPython <small>official repo</small>
-</a><br><code class="bash">hg clone https://hg.python.org/cpython</code></li>
-<li>
-<a href="https://github.com/python/cpython">
-CPython <small>semi official, read-only GitHub mirror</small>
-</a><br><code class="bash">git clone https://github.com/python/cpython</code></pre></li>
-<li>
-<a href="https://docs.python.org/devguide/gitdevs.html#workflow-comparison">
-Transpose Mercurial and Git
-</a></li>
-</ul>
-<aside class="notes">
-Browse
-Key of B: Branches and bookmarks
-</aside>
-</section>
-<section id="sec-3-4" >
-
-<h2>A little theory...</h2>
-<h3>source code directory</h3>
-<ul>
-<li>Docs</li>
-<li>Tests</li>
-<li>Operating system</li>
-<li>Standard library</li>
-</ul>
-<aside class="notes">
-
-</aside>
-</section>
-<section id="sec-3-5" >
-
-<h2>Listen</h2>
-<blockquote>My first relationship to any kind of musical situation is as a listener.<br>— Pat Metheny</blockquote>
-</section>
-<section id="sec-3-6" >
-
-<h2>Create a playlist</h2>
-<p>pyvideo.org</p>
-</section>
-<section id="sec-3-7" >
-
-<h2>Join a band...</h2>
-<p><a href="http://pythonmentors.com">Core Mentorship</a></p>
-</section>
-<section id="sec-3-8" >
-
-<h2>...or several combos</h2>
-<li>#python-dev</li>
-<li>Mailing lists</li>
-<p>python-ideas, python-docs, python-new-bugs-announce</p>
-<li>Welcoming spaces</li>
-<p>OpenHatch, PyLadies, user groups</p>
-<li>Sprints and pairing</li>
-<li>#positive-python</li>
-</ul>
-</section>
-</section>
-
-<section>
-<section id="sec-4" >
-
-<h2>Find your rhythm</h2>
-<aside class="notes">
-TIME: 14.00 to 21.00
-Trying to find your way
-Clambake (n): ad lib session, every man for himself, a jam session not in the groove.
-</aside>
-</section>
-<section id="sec-4-1" >
-
-<h2>Wrong and strong</h2>
-<h3>Loud and proud</h3>
-<blockquote cite="http://www.apassion4jazz.net/pat-metheny-on-jazz2.html
-">Along the way, mistakes WILL be made. Not all things tried will work out. But that impulse, the impulse to TRY THINGS, is perhaps the most attractive -- and sometimes the most underutilized.<br>— Pat Metheny
-</blockquote>
-<aside class="notes">
-</aside>
-</section>
-<section id="sec-4-2" >
-
-<h2>Selecting a solo</h2>
-<aside class="notes">
-...or a duet if you are pairing
-Getting started
-Docs
-Tests
-Issues
-</aside>
-</section>
-<section id="sec-4-3" >
-
-<h2>Docs</h2>
-<ul>
-<li>Sphinx</li>
-<code>
-$cd Docs<br>
-$make html
-</code>
-<li>reStructured Text (rst) basics</li>
-<li>Find an issue</li>
-<li>Read a doc; offer a helpful change</li>
-<li>Localize a doc</li>
-</ul>
-</section>
-<section id="sec-4-4" >
-
-<h2>Testing</h2>
-<ul>
-<li>Run tests on your system</li>
-<li>Find a testing issue</li>
-<li>Improve testing fu</li>
-<li>Keep Buildbots green</li>
-</ul>
-</section>
-<section id="sec-4-5" >
-
-<h2>Issues</h2>
-<ul>
-<li>Follow along new issues and python-dev</li>
-<li>Look at infrastructure projects</li>
-<li>Ask on core mentorship</li>
-<li>Consider reviewing a patch</li>
-</ul>
-</section>
-<section id="sec-4-6" >
-
-<h2>Onboarding and beyond</h2>
-<ul>
-<li>Inspire</li>
-<li>Equip</li>
-<li>Listen</li>
-<li>Encourage</li>
-</ul>
-<aside class="notes">
-Features come and go but the community continues on
-</aside>
-</section>
-<section id="sec-4-7" >
-
-<h2>The most amazing new feature...</h2>
-<ul>
-<li><a href="https://www.python.org/dev/peps/pep-0478/">PEP 478 Release schedule for Python 3.5</a></li>
-<li>Research issue tracker, mail archives, PEPs</li>
-<li>Review other people's patches</li>
-<li>Be cordial</li>
-</section>
-</section>
-
-<section>
-<section id="sec-5">
-
-<h2>Improvise</h2>
-<aside class="notes">
-TIME: 21.00 to 26.00
-Perfection is not the goal.
-Each performance differs. Mistakes happen.
-Life happens.
-Unplanned paths.
-Pluck a string/poke at the code
-What does this do?
-What if I do this?
-What happens if I combine this and that? Franken- instrument
-Refocus and regroup
-create patch
-upload to issue tracker request review
-Start practicing and playing
-Change Build Test Repeat
-Reviews and encores
-The Good, the bad, and the ugly
-Asked to resubmit: Encores or the next gig
-</aside>
-</section>
-<section id="sec-5-1" >
-
-<h3>people</h3>
-</section>
-<section id="sec-5-2" >
-
-<h2>people</h2>
-</section>
-<section id="sec-5-3" >
-
-<h1>people</h1>
-</section>
-</section>
-
-<section>
-<section id="sec-6" data-background="media/seastar.jpg">
-<blockquote style="background-color:aliceblue">I have won several prizes as the <span style="color:coral">world's slowest</span> alto player as well as a special award in 1961 for quietness.
-<p>
-— Paul Desmond
-</p></blockquote>
-<aside class="notes">
-TIME: 26.00 to 29.00
-Jazz greats are slow. Core devs i.e. Brian Curtin a couple of years.
-</aside>
-</section>
-<section id="sec-6-1" >
-
-<h2>Find your Python groove?</h2>
-<ul class="org-ul">
-<li class="fragment roll-in">Try a sprint</li>
-<li class="fragment roll-in">Learn, build, and share</li>
-<li class="fragment roll-in">Embrace some Gypsy Jazz<br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wlFk92t8pXc" frameborder="0" controls allowfullscreen></iframe>
-<br><span style="color:blue">Thank you Django lover, Adrian Holovaty, for PyCon 2014 Poster Session encouragement</span></li>
-</ul>
-<aside class="notes">
-Django Reinhardt
-song "Horska" performed and recorded by the Halifax, Nova Scotia band Gypsophilia (Horska, Forward Music 2013). video was produced by Halifax production company Shut Up & Colour and was made possible by the support of Nova Scotia Department of Communities, Culture and Heritage.
-</aside>
-</section>
-<section id="sec-6-2" >
-
-<h2>PyLadies'</h2>
-<h2>playing it forward</h2>
-
-<h3>The Jazzy Groove Guide to CPython Contribution</h3>
-</section>
-<section id="sec-6-3" >
-
-<h2>The Jazzy Groove Guide to CPython Contribution</h2>
-<img src="media/jazzy.png">
-</section>
-<section id="sec-6-4" >
-
-<h2>PyLadies' playing it forward</h2>
-<li>Sunday's poster session</li>
-<li>Sprint</li>
-<li>Contribute to the <a href="http://open.spotify.com/user/12142510943/playlist/5lq2xOoWWebfsBZOqQIwjv">Python Contributor Groove</a> playlist</li>
-</ul>
-</h3>
-<aside class="notes">
-</aside>
-</section>
-</section>
-
-<section id="sec-7">
-
+<section id="sec-6">
 <h2>Gratitude</h2>
 <ul>
-<li>San Diego Python, PyLadies San Diego, and PyCon 2015 virtual cool cat, Paul Collins</li>
-<li>CPython contributors and core devs</li>
+<li>San Diego Python, PyLadies San Diego</li>
+<li>Fab Lab San Diego</li>
 <li>OpenHatch friends</li>
-<li>Requests friends</li>
 <li>PyLadies</li>
+<li>DjangoGirls</li>
 <li>Pythonistas: past and present, near and far</li>
 </ul>
 </section>
-<section id="sec-7-1">
 
-<h1>THANK YOU</h1>
+<section id="sec-6-1" data-background="media/geekgirl2014.jpg">
+<h1 style="color:white">THANK YOU</h1>
 <ul>
-<li><a href="http://slides.com">Slides</a></li>
-<li>
+<li style="color:yellow"><a href="http://slides.com">Slides</a></li>
+<li style="color:yellow">
 <a href="https://github.com/willingc/">Source code &amp; documentation</a>
 </li>
-<li>Enjoy the journey</li>
-<video src="media/code_swarm.mp4" width="800" height="450" controls></video>
+<li style="color:white">Join PyLadies San Diego and San Diego Python on meetup.com</li>
+</ul>
 </section>
-<section id="sec-7-1">
 
-<h2>Credits</h2>
+<section id="sec-6-2" data-background="media/datapost.jpg">
+<h2 style="color:white">Credits</h2>
 <ul>
-<li>Youtube - song "Horska" performed and recorded by the Halifax, Nova Scotia band Gypsophilia (Horska, Forward Music 2013). video was produced by Halifax production company Shut Up &amp; Colour and was made possible by the support of Nova Scotia Department of Communities, Culture and Heritage.
+<li style="color:white">Audrey Roy
 </li>
-<li>
-Photos: Fabrizio Sciami, For a democratic [Jazz It] Festival; Carol Willing
-<li>
-Quotes: http://www.apassion4jazz.net
+<li style="color:white">
+PyLadies San Diego
 </li>
-<li</li>
-<video src="media/code_swarm.mp4" width="800" height="450" controls></video>
+<li style="color:white">
+San Diego Python
+</li>
+</ul>
 </section>
 </section>
-
+</section>
 <!--End of slides-->
 </div>
 

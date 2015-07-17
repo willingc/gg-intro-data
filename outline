@@ -1,0 +1,60 @@
+Science
+
+What is Scientific Computing?
+  Collecting and cleaning Data
+  Combine and Analyze Collection of Data
+  Display Information
+  Share
+
+Example
+  Collect and cleaning data
+  Combine Analyze
+  Display
+  Share
+
+
+
+Environments
+  Jupyter - Python, Julia, R and more
+  Anaconda Continuum.io
+  Enthought
+  Sage Math Cloud
+  IPython
+
+Libraries
+  SciPy
+  NumPy
+  Pandas
+  matplotlib
+  sympy - symbolic math
+  ipython
+
+Seaborn
+Scikit-image
+Scikit-learn
+
+Learning
+  Software Carpentry
+  PyVideo.org
+  SciPy Conference
+
+Science areas
+  Astronomy
+  Artificial intelligence and machine learning
+  Bayesian Statistics
+  Biology (including Neuroscience)
+  Dynamical systems
+  Electromagnetics and Electrical Engineering
+  Geosciences
+  Molecular modeling
+  Signal processing
+  Symbolic math, number theory
+  Quantum mechanics
+
+
+
+Share
+  Flask
+  Notebooks
+  Presentation
+    interactive widgets
